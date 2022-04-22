@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200&display=swap');
+
+:root {
+   --darkGreen: #012326;
+   --lightGreen: #0C4040;
+   --beige: #F2B279;
+   --darkBeige: #D97855;
+   --brown: #73261F;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: var(--darkGreen);
+}
+
+/* Header */
+header {
+   max-width: 100%;
+   height: 100vh;
+   margin-bottom: 2em;
+}
+
+.hero {
+   padding: 80px 100px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+
+.hero-illust svg {
+   width: 350px;
+   height: 350px;
+}
+
+.hero-text h2 {
+   font-size: 3vmax;
+   text-align: right;
+   color: white;
+}
+
+.hero-text span {
+   color: var(--beige);
+}
+
+header h4 {
+   font-size: 1.7rem;
+   text-align: center;
+   color: white;
+}
+
+header a {
+   text-decoration: none;
+}
+
+header a button {
+   min-width: 20%;
+   display: block;
+   margin: auto;
+   padding: 10px;
+   border-radius: 15px;
+   border: none;
+   background-color: var(--lightGreen);
+   color: var(--darkBeige);
+   font-size: 1.3rem;
+   font-weight: 700;
+   transition: all 0.3s ease-out;
+   cursor: pointer;
+}
+
+header a button:hover {
+   background-color: #024950;
+}
+
+header a button:active {
+   transform: scale(0.95);
+}
+
+/* About */
+.about {
+   max-width: 100%;
+   height: 100vh;
+   padding: 30px 100px;
+   background-color: var(--beige);
+}
+
+.about-board {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 2em;
+}
+
+.about-title h1 {
+   font-size: 6rem;
+   line-height: 1em;
+}
+
+.about-title .z {
+   color: var(--darkGreen);
+}
+
+.about-title .abra {
+   color: var(--lightGreen);
+}
+
+.about-img img {
+   width: 350px;
+   height: 350px;
+   box-shadow: -7px 7px 0 var(--darkGreen);
+   border-radius: 20px;
+}
+
+.about-text {
+   max-width: 70%;
+   margin: auto;
+}
+
+.about-text p {
+   color: var(--darkGreen);
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.about-text::after {
+   content: "";
+   display: block;
+   border-bottom: 5px solid var(--brown);
+   border-radius: 5px;
+   width: 60%;
+   margin: 15px auto;
+}
+
+.about-button p {
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.about-button p a {
+   text-decoration: none;
+   color: white;
+}
+
+.about-button p a button {
+   padding: 3px 10px;
+   border-radius: 15px;
+   border: none;
+   background-color: var(--lightGreen);
+   color: white;
+   font-size: 1.5rem;
+   transition: all 0.3s ease-out;
+   cursor: pointer;
+}
+
+.about-button p a button:hover {
+   background-color: #024950;
+}
+
+.about-button p a button:active {
+   transform: scale(0.95);
+}
+
+.company {
+   padding: 30px 100px;
+   height: 100vh;
+}
+
+.company h2 {
+   font-size: 2vmax;
+   text-align: center;
+   color: white;
+   font-weight: 600;
+}
+
+.company h1 {
+   font-size: 4vmax;
+   text-align: center;
+   color: white;
+   background-color: var(--brown);
+   box-shadow: 0 5px 0 var(--darkBeige);
+   width: fit-content;
+   padding: 5px 15px;
+   border-radius: 20px;
+   margin: 10px auto;
+}
+
+.hero-company {
+   margin: 40px auto;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 15px;
+}
+
+.hero-company img {
+   width: 300px;
+   height: 300px;
+}
+
+.hero-company p {
+   color: white;
+   font-size: 1.5rem;
+   text-align: justify;
+   max-width: 50%;
+}
+
+.company h4 {
+   font-size: 1.3rem;
+   color: white;
+   text-align: center;
+   font-weight: 600;
+}
+
+.company a {
+   text-decoration: none;
+}
+
+.company a button {
+   display: block;
+   margin: 10px auto;
+   color: var(--darkGreen);
+   font-size: 1.3rem;
+   font-weight: 600;
+   background-color: var(--beige);
+   border: none;
+   padding: 5px 10px;
+   border-radius: 15px;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+.company a button:hover {
+   background-color: #FF9D6C;
+}
+
+.company a button:active {
+   transform: scale(0.95);
+}
+
+.project {
+   max-width: 100%;
+   height: min-content;
+   background-color: var(--beige);
+   padding: 30px 0;
+}
+
+.project h2 {
+   color: var(--lightGreen);
+   text-align: center;
+   font-size: 2vmax;
+   margin-bottom: 40px;
+}
+
+.gallery-project {
+   margin: auto;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.gallery-project img {
+   width: 350px;
+   height: fit-content;
+}
+
+.project h3 {
+   margin: 40px auto;
+   text-align: center;
+   color: var(--darkGreen);
+   font-size: 2.5vmax;
+}
+
+.project a {
+   text-decoration: none;
+}
+
+.project a button {
+   background-color: var(--brown);
+   color: white;
+   padding: 3px 10px;
+   border: none;
+   border-radius: 15px;
+   font-size: 2vmax;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+.project a button:hover {
+   background-color: #A72B20;
+}
+
+.project a button:active {
+   transform: scale(0.9);
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1600px) {
+   .hero {
+      padding: 150px 100px;
+   }
+
+   .hero-illust svg {
+      width: 500px;
+      height: 500px;
+   }
+
+   header h4 {
+      font-size: 2.5rem;
+   }
+
+   header a button {
+      font-size: 2rem;
+   }
+
+   .about-board {
+      padding: 100px;
+      justify-content: space-between;
+   }
+
+   .about-title h1 {
+      font-size: 8rem;
+   }
+
+   .about-img img {
+      width: 400px;
+      height: 400px;
+   }
+
+   .about-text p {
+      font-size: 2.2rem;
+   }
+
+   .about-text::after {
+      border-bottom: 10px solid var(--brown);
+      margin: 20px auto;
+   }
+
+   .about-button p {
+      font-size: 2.5rem;
+   }
+
+   .about-button p a button {
+      padding: 6px 20px;
+      font-size: 2rem;
+   }
+
+   .company {
+      padding: 50px 100px;
+   }
+
+   .hero-company {
+      margin: 100px auto;
+   }
+
+   .hero-company img {
+      width: 400px;
+      height: 400px;
+   }
+
+   .hero-company p {
+      font-size: 2rem;
+   }
+
+   .company h4 {
+      font-size: 2rem;
+   }
+
+   .company a button {
+      font-size: 2rem;
+   }
+
+   .gallery-project img {
+      width: 400px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .hero {
+      padding: 100px;
+   }
+
+   .hero-illust svg {
+      width: 400px;
+      height: 400px;
+   }
+
+   header h4 {
+      font-size: 1.5rem;
+   }
+
+   header a button {
+      font-size: 1.5rem;
+   }
+
+   .about-img img {
+      width: 300px;
+      height: 300px;
+   }
+}
+
+@media screen and (max-width: 960px) {
+
+   .hero {
+      padding: 40px 60px;
+   }
+
+   .about-title h1 {
+      font-size: 4rem;
+   }
+
+   .about-img img {
+      width: 250px;
+      height: 250px;
+   }
+
+   .about-text p {
+      font-size: 1.5rem;
+   }
+
+   .about-button p {
+      font-size: 1.5rem;
+   }
+
+   .about-button p a button {
+      font-size: 1.5rem;
+   }
+
+   .gallery-project img {
+      width: 300px;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .hero {
+      padding: 40px 30px;
+   }
+
+   .hero-illust svg {
+      width: 300px;
+      height: 300px;
+   }
+
+   header h4 {
+      font-size: 1.3rem;
+   }
+
+   header a button {
+      font-size: 1rem;
+   }
+
+   .about {
+      padding: 0 100px;
+   }
+
+   .about-board {
+      flex-direction: column;
+      padding: 1em;
+   }
+
+   .about-title {
+      margin: 15px 0;
+   }
+
+   .about-title h1 {
+      font-size: 2rem;
+      text-align: center;
+   }
+
+   .about-img img {
+      width: 200px;
+      height: 200px;
+   }
+
+   .about-text p {
+      font-size: 1.1rem;
+   }
+
+   .about-text::after {
+      margin: 10px auto;
+   }
+
+   .about-button p {
+      font-size: 1.1rem;
+   }
+
+   .about-button p a button {
+      font-size: 1.1rem;
+   }
+
+   .company {
+      padding-bottom: 80px;
+   }
+
+   .company h2 {
+      font-size: 2.5vmax;
+   }
+
+   .hero-company {
+      flex-direction: column;
+   }
+
+   .hero-company img {
+      width: 200px;
+      height: 200px;
+   }
+
+   .hero-company p {
+      font-size: 1.2rem;
+      max-width: 95%;
+   }
+
+   .company h4 {
+      font-size: 1.1rem;
+   }
+
+   .company a button {
+      font-size: 1.1rem;
+   }
+
+   .project {
+      height: min-content;
+   }
+
+   .project h2 {
+      font-size: 3vmax;
+   }
+
+   .gallery-project {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media screen and (max-width: 460px) {
+   .hero {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+   }
+
+   .hero-text h2 {
+      text-align: center;
+   }
+
+   header h4 {
+      font-size: 1rem;
+   }
+
+   header a button {
+      font-size: 1rem;
+   }
+
+   .about {
+      padding-bottom: 70px;
+   }
+
+   .about-img img {
+      width: 200px;
+      height: 200px;
+   }
+
+   .about-text {
+      max-width: 90%;
+   }
+
+   .about-text p {
+      font-size: 1rem;
+   }
+
+   .about-button p {
+      font-size: 1rem;
+   }
+
+   .about-button p a button {
+      font-size: 1rem;
+   }
+
+   .company {
+      height: min-content;
+   }
+
+   .hero-company img {
+      width: 150px;
+      height: 150px;
+   }
+
+   .hero-company p {
+      font-size: 1.1rem;
+      max-width: 100%;
+   }
+
+   .company h4 {
+      font-size: 1.1rem;
+   }
+
+   .company a button {
+      font-size: 1.1rem;
+   }
+
+   .project h2 {
+      font-size: 3vmax;
+   }
+
+}
