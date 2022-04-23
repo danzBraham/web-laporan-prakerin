@@ -163,11 +163,8 @@ header a button:active {
 }
 
 .report {
-   height: 100vh;
+   height: min-content;
    padding: 30px;
-   /* display: flex;
-   flex-direction: column;
-   justify-content: center; */
 }
 
 .report h2 {
