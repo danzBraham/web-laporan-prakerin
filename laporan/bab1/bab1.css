@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200&display=swap');
+
+:root {
+   --darkGreen: #012326;
+   --lightGreen: #0C4040;
+   --beige: #F2B279;
+   --darkBeige: #D97855;
+   --brown: #73261F;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: var(--lightGreen);
+   padding: 20px 100px;
+   color: white;
+}
+
+.title h1 {
+   font-size: 4vmax;
+   color: white;
+   text-align: center;
+   text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.title h1::after {
+   content: "";
+   border-bottom: 5px solid var(--beige);
+   width: 50%;
+   display: block;
+   margin: auto;
+   box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.pendahuluan {
+   margin: 30px 0;
+}
+
+.pendahuluan>h1 {
+   font-size: 3rem;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+h1 {
+   font-size: 2rem;
+   margin: 20px 0;
+}
+
+h2 {
+   font-size: 1.7rem;
+   font-weight: 500;
+}
+
+p {
+   margin: 20px 0;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+span {
+   color: var(--beige);
+}
+
+.pendahuluan div {
+   margin-bottom: 50px;
+}
+
+.latar-belakang {
+   text-align: justify;
+   margin: 80px 0;
+}
+
+.tujuan h1,
+.manfaat h1 {
+   text-align: center;
+   font-size: 2.3rem;
+}
+
+.tujuan div {
+   margin-bottom: 50px;
+}
+
+.manfaat div {
+   margin-bottom: 50px;
+}
+
+.button {
+   width: fit-content;
+   margin: auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+a button {
+   background-color: var(--darkBeige);
+   padding: 0.7em 3em;
+   display: inline-block;
+   text-align: center;
+   border: none;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 700;
+   border-radius: 20px;
+   margin: 0 10px;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+a button:hover {
+   background-color: #ED6E41;
+}
+
+a button:active {
+   transform: scale(0.9);
+}
+
+/* Responsive */
+
+@media screen and (max-width:460px) {
+
+   body {
+      padding: 20px 50px;
+   }
+
+   .pendahuluan>h1 {
+      font-size: 2rem;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+
+   p {
+      font-size: 1rem;
+   }
+}
