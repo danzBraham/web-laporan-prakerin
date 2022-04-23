@@ -66,7 +66,7 @@ header a button {
    border-radius: 15px;
    border: none;
    background-color: var(--lightGreen);
-   color: var(--darkBeige);
+   color: var(--beige);
    font-size: 1.3rem;
    font-weight: 700;
    transition: all 0.3s ease-out;
@@ -272,7 +272,7 @@ header a button:active {
    margin: 40px auto;
    text-align: center;
    color: var(--darkGreen);
-   font-size: 2.5vmax;
+   font-size: 2vmax;
 }
 
 .project a {
@@ -455,7 +455,7 @@ header a button:active {
    }
 
    .about {
-      padding: 0 100px;
+      padding: 0 30px;
    }
 
    .about-board {
@@ -494,7 +494,7 @@ header a button:active {
    }
 
    .company {
-      padding-bottom: 80px;
+      padding: 30px 30px 80px;
    }
 
    .company h2 {
@@ -557,7 +557,7 @@ header a button:active {
    }
 
    .about {
-      padding-bottom: 70px;
+      padding: 30px 30px;
    }
 
    .about-img img {
@@ -582,7 +582,7 @@ header a button:active {
    }
 
    .company {
-      height: min-content;
+      padding: 30px 30px 50px;
    }
 
    .hero-company img {
@@ -605,6 +605,14 @@ header a button:active {
 
    .project h2 {
       font-size: 3vmax;
+   }
+
+   .project h3 {
+      font-size: 1.1rem;
+   }
+
+   .project a button {
+      font-size: 1.1rem;
    }
 
 }
