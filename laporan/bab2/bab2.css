@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200&display=swap');
+
+:root {
+   --darkGreen: #012326;
+   --lightGreen: #0C4040;
+   --beige: #F2B279;
+   --darkBeige: #D97855;
+   --brown: #73261F;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: var(--lightGreen);
+   padding: 20px 100px;
+   color: white;
+}
+
+.title h1 {
+   font-size: 4vmax;
+   color: white;
+   text-align: center;
+   text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.title h1::after {
+   content: "";
+   border-bottom: 5px solid var(--beige);
+   width: 50%;
+   display: block;
+   margin: auto;
+   box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+   font-size: 2rem;
+   margin: 20px 0;
+   text-align: center;
+}
+
+h2 {
+   font-size: 1.7rem;
+   font-weight: 500;
+   margin-top: 20px;
+}
+
+p {
+   margin: 20px 0;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+span {
+   color: var(--beige);
+}
+
+img {
+   width: 100%;
+}
+
+.sejarah {
+   margin: 50px auto;
+}
+
+.sejarah h1 {
+   padding: 20px 0;
+}
+
+.sejarah p {
+   text-align: justify;
+}
+
+.tinjauan~section {
+   padding: 40px 0;
+}
+
+.logo img {
+   width: 300px;
+   height: fit-content;
+   display: block;
+   margin: auto;
+}
+
+.logo p {
+   text-align: justify;
+}
+
+.struktur img {
+   width: 600px;
+   height: fit-content;
+   display: block;
+   margin: auto;
+   border-radius: 20px;
+}
+
+.produk img {
+   width: 200px;
+   height: fit-content;
+   border-radius: 20px;
+}
+
+.box-barang {
+   background-color: rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   margin: 20px auto;
+   border-radius: 20px;
+   width: 90%;
+   display: grid;
+   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+   gap: 20px;
+}
+
+.barang {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+   justify-items: center;
+}
+
+.produk h3 {
+   font-size: 1.5rem;
+   text-align: center;
+}
+
+
+.button {
+   width: fit-content;
+   margin: auto;
+}
+
+.box-jasa {
+   background-color: rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   margin: 20px auto;
+   border-radius: 20px;
+   width: 90%;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+   justify-items: center;
+}
+
+a {
+   text-decoration: none;
+}
+
+a button {
+   background-color: var(--darkGreen);
+   padding: 0.7em 3em;
+   display: inline-block;
+   text-align: center;
+   border: none;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 700;
+   border-radius: 20px;
+   margin: 0 10px;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+a button:hover {
+   background-color: #ED6E41;
+}
+
+a button:active {
+   transform: scale(0.9);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+   .produk h3 {
+      font-size: 1.1rem;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .produk img {
+      width: 150px;
+   }
+
+   .produk h3 {
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width:460px) {
+
+   body {
+      padding: 5px 50px;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+
+   p {
+      font-size: 1rem;
+   }
+
+   .struktur img {
+      width: 300px;
+   }
+
+   .barang {
+      grid-template-columns: none;
+   }
+
+   .produk h3 {
+      margin: 5px 0;
+   }
+
+   .box-jasa {
+      grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: none;
+   }
+
+   .button {
+      margin-bottom: 30px;
+   }
+
+   a button {
+      font-size: 1rem;
+   }
+}

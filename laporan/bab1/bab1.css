@@ -141,4 +141,13 @@ a button:active {
    p {
       font-size: 1rem;
    }
+
+
+   .button {
+      margin-bottom: 30px;
+   }
+
+   a button {
+      font-size: 1rem;
+   }
 }

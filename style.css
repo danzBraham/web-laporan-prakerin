@@ -163,7 +163,7 @@ header a button:active {
 }
 
 .report {
-   height: min-content;
+   height: 100vh;
    padding: 30px;
 }
 
@@ -302,6 +302,11 @@ header a button:active {
       width: 300px;
       height: 300px;
    }
+
+
+   .report {
+      height: fit-content;
+   }
 }
 
 @media screen and (max-width: 960px) {
@@ -424,5 +429,9 @@ header a button:active {
 
    .about-button p a button {
       font-size: 1rem;
+   }
+
+   .report {
+      margin-bottom: 30px;
    }
 }
