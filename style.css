@@ -48,12 +48,6 @@ header {
    color: var(--beige);
 }
 
-header h4 {
-   font-size: 1.7rem;
-   text-align: center;
-   color: white;
-}
-
 header a {
    text-decoration: none;
 }
@@ -71,6 +65,7 @@ header a button {
    font-weight: 700;
    transition: all 0.3s ease-out;
    cursor: pointer;
+   box-shadow: 0 10px 7px rgba(0, 0, 0, 0.5);
 }
 
 header a button:hover {
@@ -78,7 +73,8 @@ header a button:hover {
 }
 
 header a button:active {
-   transform: scale(0.95);
+   transform: translateY(10px);
+   box-shadow: none;
 }
 
 /* About */
@@ -166,135 +162,79 @@ header a button:active {
    transform: scale(0.95);
 }
 
-.company {
-   padding: 30px 100px;
+.report {
    height: 100vh;
+   padding: 30px;
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center; */
 }
 
-.company h2 {
-   font-size: 2vmax;
-   text-align: center;
+.report h2 {
    color: white;
-   font-weight: 600;
-}
-
-.company h1 {
+   text-align: center;
    font-size: 4vmax;
-   text-align: center;
-   color: white;
-   background-color: var(--brown);
-   box-shadow: 0 5px 0 var(--darkBeige);
-   width: fit-content;
-   padding: 5px 15px;
-   border-radius: 20px;
-   margin: 10px auto;
+   margin-bottom: 20px;
 }
 
-.hero-company {
+.container-report {
+   width: 100%;
    margin: 40px auto;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   gap: 15px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 25px;
+   justify-items: center;
 }
 
-.hero-company img {
+.box-report {
    width: 300px;
-   height: 300px;
-}
-
-.hero-company p {
-   color: white;
-   font-size: 1.5rem;
-   text-align: justify;
-   max-width: 50%;
-}
-
-.company h4 {
-   font-size: 1.3rem;
-   color: white;
-   text-align: center;
-   font-weight: 600;
-}
-
-.company a {
-   text-decoration: none;
-}
-
-.company a button {
-   display: block;
-   margin: 10px auto;
-   color: var(--darkGreen);
-   font-size: 1.3rem;
-   font-weight: 600;
-   background-color: var(--beige);
-   border: none;
-   padding: 5px 10px;
-   border-radius: 15px;
-   cursor: pointer;
-   transition: all 0.3s ease-out;
-}
-
-.company a button:hover {
-   background-color: #FF9D6C;
-}
-
-.company a button:active {
-   transform: scale(0.95);
-}
-
-.project {
-   max-width: 100%;
-   height: min-content;
-   background-color: var(--beige);
+   height: 400px;
    padding: 30px 0;
+   background-color: var(--lightGreen);
+   border-radius: 20px;
+   box-sizing: border-box;
+   border: 5px solid var(--brown);
+   box-shadow: 0 10px 7px rgba(0, 0, 0, 0.5);
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   align-items: center;
 }
 
-.project h2 {
-   color: var(--lightGreen);
-   text-align: center;
-   font-size: 2vmax;
-   margin-bottom: 40px;
-}
-
-.gallery-project {
-   margin: auto;
-   display: flex;
-   justify-content: space-evenly;
-}
-
-.gallery-project img {
-   width: 350px;
-   height: fit-content;
-}
-
-.project h3 {
-   margin: 40px auto;
-   text-align: center;
-   color: var(--darkGreen);
-   font-size: 2vmax;
-}
-
-.project a {
-   text-decoration: none;
-}
-
-.project a button {
-   background-color: var(--brown);
+.box-report h2 {
    color: white;
-   padding: 3px 10px;
+   font-size: 1.3rem;
+}
+
+.box-report p {
+   color: white;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+.box-report a {
+   text-decoration: none;
+
+}
+
+.box-report a button {
+   background-color: var(--darkGreen);
+   color: white;
+   font-size: 1.2rem;
+   padding: 10px 20px;
+   border-radius: 20px;
+   display: block;
+   margin: auto;
    border: none;
-   border-radius: 15px;
-   font-size: 2vmax;
-   cursor: pointer;
    transition: all 0.3s ease-out;
+   cursor: pointer;
 }
 
-.project a button:hover {
-   background-color: #A72B20;
+.box-report a button:hover {
+   background-color: var(--beige);
+   color: var(--darkGreen);
 }
 
-.project a button:active {
+.box-report a button:active {
    transform: scale(0.9);
 }
 
@@ -308,10 +248,6 @@ header a button:active {
    .hero-illust svg {
       width: 500px;
       height: 500px;
-   }
-
-   header h4 {
-      font-size: 2.5rem;
    }
 
    header a button {
@@ -349,35 +285,6 @@ header a button:active {
       padding: 6px 20px;
       font-size: 2rem;
    }
-
-   .company {
-      padding: 50px 100px;
-   }
-
-   .hero-company {
-      margin: 100px auto;
-   }
-
-   .hero-company img {
-      width: 400px;
-      height: 400px;
-   }
-
-   .hero-company p {
-      font-size: 2rem;
-   }
-
-   .company h4 {
-      font-size: 2rem;
-   }
-
-   .company a button {
-      font-size: 2rem;
-   }
-
-   .gallery-project img {
-      width: 400px;
-   }
 }
 
 @media screen and (max-width: 1200px) {
@@ -388,10 +295,6 @@ header a button:active {
    .hero-illust svg {
       width: 400px;
       height: 400px;
-   }
-
-   header h4 {
-      font-size: 1.5rem;
    }
 
    header a button {
@@ -430,10 +333,6 @@ header a button:active {
    .about-button p a button {
       font-size: 1.5rem;
    }
-
-   .gallery-project img {
-      width: 300px;
-   }
 }
 
 @media screen and (max-width: 700px) {
@@ -444,10 +343,6 @@ header a button:active {
    .hero-illust svg {
       width: 300px;
       height: 300px;
-   }
-
-   header h4 {
-      font-size: 1.3rem;
    }
 
    header a button {
@@ -492,49 +387,6 @@ header a button:active {
    .about-button p a button {
       font-size: 1.1rem;
    }
-
-   .company {
-      padding: 30px 30px 80px;
-   }
-
-   .company h2 {
-      font-size: 2.5vmax;
-   }
-
-   .hero-company {
-      flex-direction: column;
-   }
-
-   .hero-company img {
-      width: 200px;
-      height: 200px;
-   }
-
-   .hero-company p {
-      font-size: 1.2rem;
-      max-width: 95%;
-   }
-
-   .company h4 {
-      font-size: 1.1rem;
-   }
-
-   .company a button {
-      font-size: 1.1rem;
-   }
-
-   .project {
-      height: min-content;
-   }
-
-   .project h2 {
-      font-size: 3vmax;
-   }
-
-   .gallery-project {
-      flex-direction: column;
-      align-items: center;
-   }
 }
 
 @media screen and (max-width: 460px) {
@@ -546,10 +398,6 @@ header a button:active {
 
    .hero-text h2 {
       text-align: center;
-   }
-
-   header h4 {
-      font-size: 1rem;
    }
 
    header a button {
@@ -580,39 +428,4 @@ header a button:active {
    .about-button p a button {
       font-size: 1rem;
    }
-
-   .company {
-      padding: 30px 30px 50px;
-   }
-
-   .hero-company img {
-      width: 150px;
-      height: 150px;
-   }
-
-   .hero-company p {
-      font-size: 1.1rem;
-      max-width: 100%;
-   }
-
-   .company h4 {
-      font-size: 1.1rem;
-   }
-
-   .company a button {
-      font-size: 1.1rem;
-   }
-
-   .project h2 {
-      font-size: 3vmax;
-   }
-
-   .project h3 {
-      font-size: 1.1rem;
-   }
-
-   .project a button {
-      font-size: 1.1rem;
-   }
-
 }

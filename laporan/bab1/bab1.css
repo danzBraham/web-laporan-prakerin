@@ -100,7 +100,7 @@ a {
 }
 
 a button {
-   background-color: var(--darkBeige);
+   background-color: var(--darkGreen);
    padding: 0.7em 3em;
    display: inline-block;
    text-align: center;
