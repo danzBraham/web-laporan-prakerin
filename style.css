@@ -282,6 +282,11 @@ header a button:active {
       padding: 6px 20px;
       font-size: 2rem;
    }
+
+   .box-report {
+      width: 350px;
+      height: 450px;
+   }
 }
 
 @media screen and (max-width: 1200px) {

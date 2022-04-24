@@ -91,7 +91,7 @@ img {
 }
 
 .struktur img {
-   width: 600px;
+   width: 60%;
    height: fit-content;
    display: block;
    margin: auto;
@@ -175,12 +175,21 @@ a button:active {
 /* Responsive */
 
 @media screen and (max-width: 900px) {
+   .struktur img {
+      width: 80%;
+   }
+
    .produk h3 {
       font-size: 1.1rem;
    }
 }
 
 @media screen and (max-width: 700px) {
+
+   .struktur img {
+      width: 100%;
+   }
+
    .produk img {
       width: 150px;
    }
@@ -200,12 +209,12 @@ a button:active {
       font-size: 1.5rem;
    }
 
-   p {
-      font-size: 1rem;
+   h2 {
+      font-size: 1.3rem;
    }
 
-   .struktur img {
-      width: 300px;
+   p {
+      font-size: 1rem;
    }
 
    .barang {

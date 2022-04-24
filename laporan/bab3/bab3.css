@@ -64,7 +64,65 @@ section {
 }
 
 div {
-   margin: 50px 0;
+   margin: 40px 0 50px;
+}
+
+.ringkasan {
+   margin-bottom: 100px;
+}
+
+.deskripsi h3 {
+   text-align: center;
+   font-size: 2rem;
+   margin: 50px auto -40px;
+}
+
+.step {
+   margin: 80px auto;
+}
+
+.step img {
+   width: 70%;
+   height: fit-content;
+   display: block;
+   margin: 20px auto;
+}
+
+table,
+th,
+td {
+   border: 2px solid hsl(16, 63%, 56%);
+}
+
+table {
+   width: 80%;
+   margin: 30px auto;
+   border-collapse: collapse;
+   font-size: 1.3rem;
+   background-color: hsl(28, 55%, 71%);
+   color: #012326;
+}
+
+tr:nth-child(even) {
+   background-color: hsl(28, 72%, 65%);
+}
+
+th {
+   padding: 10px;
+   background-color: #73261F;
+   color: white;
+}
+
+td {
+   padding: 10px;
+}
+
+td:first-child {
+   text-align: center;
+}
+
+.deskripsi p:last-child {
+   text-align: center;
 }
 
 .button {
@@ -74,6 +132,32 @@ div {
 
 a {
    text-decoration: none;
+}
+
+
+.tombol-tahoma button {
+   background-color: var(--beige);
+   padding: 0.7em 1.3em;
+   display: inline-block;
+   text-align: center;
+   border: none;
+   color: var(--darkGreen);
+   box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+   font-size: 1.2rem;
+   font-weight: 700;
+   border-radius: 20px;
+   margin: 0 10px;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+.tombol-tahoma button:hover {
+   background-color: hsl(28, 82%, 61%);
+}
+
+.tombol-tahoma button:active {
+   transform: translateY(7px);
+   box-shadow: none;
 }
 
 a button {
@@ -101,13 +185,33 @@ a button:active {
 
 /* Responsive */
 
+@media screen and (max-width: 1600px) {
+   .button {
+      width: max-content;
+   }
+}
+
 @media screen and (max-width: 900px) {
-   h2 {
-      font-size: 1.5rem;
+   table {
+      width: 90%;
+   }
+
+   .deskripsi img {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   table {
+      width: 100%;
+   }
+
+   .tombol-tahoma button {
+      font-size: 1rem;
    }
 
    a button {
-      font-size: 1rem;
+      font-size: 0.9rem;
    }
 }
 
@@ -127,6 +231,10 @@ a button:active {
 
    p {
       font-size: 1rem;
+   }
+
+   .deskripsi img {
+      width: 100%;
    }
 
    .button {
