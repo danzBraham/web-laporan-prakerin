@@ -142,12 +142,12 @@ a button:active {
       font-size: 1rem;
    }
 
-
    .button {
-      margin-bottom: 30px;
+      width: fit-content;
+      margin: 0 auto 30px;
    }
 
    a button {
-      font-size: 1rem;
+      font-size: 0.8rem;
    }
 }

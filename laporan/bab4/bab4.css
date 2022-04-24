@@ -59,90 +59,12 @@ span {
    color: var(--beige);
 }
 
-img {
-   width: 100%;
-}
-
-.sejarah {
+section {
    margin: 50px auto;
 }
 
-.sejarah h1 {
-   padding: 20px 0;
-}
-
-.sejarah p {
-   text-align: justify;
-}
-
-.tinjauan~section {
-   padding: 40px 0;
-}
-
-.logo img {
-   width: 300px;
-   height: fit-content;
-   display: block;
-   margin: auto;
-}
-
-.logo p {
-   text-align: justify;
-}
-
-.struktur img {
-   width: 600px;
-   height: fit-content;
-   display: block;
-   margin: auto;
-   border-radius: 20px;
-}
-
-.produk img {
-   width: 200px;
-   height: fit-content;
-   border-radius: 20px;
-}
-
-.box-barang {
-   background-color: rgba(0, 0, 0, 0.2);
-   padding: 20px;
-   margin: 20px auto;
-   border-radius: 20px;
-   width: 90%;
-   display: grid;
-   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-   gap: 20px;
-}
-
-.barang {
-   display: grid;
-   grid-template-columns: 1fr 2fr;
-   align-items: center;
-   justify-items: center;
-}
-
-.produk h3 {
-   font-size: 1.5rem;
-   text-align: center;
-}
-
-
-.button {
-   width: fit-content;
-   margin: auto;
-}
-
-.box-jasa {
-   background-color: rgba(0, 0, 0, 0.2);
-   padding: 20px;
-   margin: 20px auto;
-   border-radius: 20px;
-   width: 90%;
-   display: grid;
-   grid-template-columns: 1fr 2fr;
-   align-items: center;
-   justify-items: center;
+div {
+   margin: 50px 0;
 }
 
 a {
@@ -174,21 +96,9 @@ a button:active {
 
 /* Responsive */
 
-@media screen and (max-width: 900px) {
-   .produk h3 {
-      font-size: 1.1rem;
-   }
-}
+@media screen and (max-width: 900px) {}
 
-@media screen and (max-width: 700px) {
-   .produk img {
-      width: 150px;
-   }
-
-   .produk h3 {
-      font-size: 0.9rem;
-   }
-}
+@media screen and (max-width: 700px) {}
 
 @media screen and (max-width:460px) {
 
@@ -202,23 +112,6 @@ a button:active {
 
    p {
       font-size: 1rem;
-   }
-
-   .struktur img {
-      width: 300px;
-   }
-
-   .barang {
-      grid-template-columns: none;
-   }
-
-   .produk h3 {
-      margin: 5px 0;
-   }
-
-   .box-jasa {
-      grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-      grid-template-columns: none;
    }
 
    .button {
